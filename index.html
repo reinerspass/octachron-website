@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="OCTACHRON is a very Flexible iOS 16 Track MIDI Drum Sequencer with rich modulation and sequencing capabilities. It works standalone or as AUv3 AudioUnit in your favorite iOS DAW.">
-  <meta name="keywords" content="MIDI, Drum, Sequencer, iOS, iPad, iPhone AUv3, MIDI CC, Standalone, DAW">
-  <meta name="author" content="Markus Teufel, Tassilo Eichler">
-  <meta property="og:image" content="https://octachron.de/img/octachron_logo_icon_black@2x.png" />
-  <meta name="twitter:image" content="https://octachron.de/img/octachron_logo_icon_black@2x.png">
-  <meta name="twitter:card" content="https://octachron.de/img/octachron_logo_icon_black@2x.png">
 
-	<title>OCTACHRON iOS MIDI Drum Sequencer (AUv3) with Smart Randomizer + Trigger and CC Mutation</title>
-  <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="OCTACHRON is a very Flexible iOS 16 Track MIDI Drum Sequencer with rich modulation and sequencing capabilities. It works standalone or as AUv3 AudioUnit in your favorite iOS DAW.">
+    <meta name="keywords" content="MIDI, Drum, Sequencer, iOS, iPad, iPhone AUv3, MIDI CC, Standalone, DAW">
+    <meta name="author" content="Markus Teufel, Tassilo Eichler">
+    <meta property="og:image" content="https://octachron.de/img/octachron_logo_icon_black@2x.png" />
+    <meta name="twitter:image" content="https://octachron.de/img/octachron_logo_icon_black@2x.png">
+    <meta name="twitter:card" content="https://octachron.de/img/octachron_logo_icon_black@2x.png">
+
+    <title>OCTACHRON iOS MIDI Drum Sequencer (AUv3) with Smart Randomizer + Trigger and CC Mutation</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -21,11 +23,11 @@
     <link href="css/grayscale_02.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
-	<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
-	<link rel="stylesheet" href="http://blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
+    <link rel="stylesheet" href="http://blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
 
-  <link rel="stylesheet" href="css/bootstrap-image-gallery.min.css">
+    <link rel="stylesheet" href="css/bootstrap-image-gallery.min.css">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="http://blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
     <script src="js/bootstrap-image-gallery.min.js"></script>
@@ -38,226 +40,257 @@
 	<![endif]-->
 
 </head>
+
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
     <!-- Navigation -->
     <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-		<div class="container">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse"><i class="fa fa-bars"></i></button>
-        <a class="navbar-brand page-scroll" href="#page-top">
-          <img id="octachron-logo" src="img/octachron_logo_icon_transp.svg" alt="Logo OCTACHRON iOS MIDI Drum Sequencer (AUv3)">
-        </a>
-				<a class="btn_appstore_mobile" href="https://apps.apple.com/de/app/octachron-midi-drum-sequencer/id1453137215" target="_blank">
-						<img src="img/appstorebadge.png" width="140px" alt="Appstorebadge">
-				</a>
-      </div>
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target=".navbar-main-collapse"><i class="fa fa-bars"></i></button>
+                <a class="navbar-brand page-scroll" href="#page-top">
+                    <img id="octachron-logo" src="img/octachron_logo_icon_transp.svg"
+                        alt="Logo OCTACHRON iOS MIDI Drum Sequencer (AUv3)">
+                </a>
+                <a class="btn_appstore_mobile"
+                    href="https://apps.apple.com/de/app/octachron-midi-drum-sequencer/id1453137215" target="_blank">
+                    <img src="img/appstorebadge.png" width="140px" alt="Appstorebadge">
+                </a>
+            </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-					<ul class="nav navbar-nav">
-	                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-	                    <li class="hidden"><a href="#page-top"></a></li>
-						<li><a class="page-scroll" href="#about">Features</a></li>
-						<li><a class="page-scroll" href="#gallery">Gallery</a></li>
-	          <li><a class="page-scroll" href="#specs">Specs</a></li>
-	          <!-- <li><a class="page-scroll" href="#download">Download</a></li> -->
-						<li><a class="page-scroll" href="#merch" style="color: #FFAB31">Merch</a></li>
-						<li><a class="page-scroll" href="#contact">Contact</a></li>
-						<li><a class="page-scroll" href="manual.html">Manual</a></li>
-						<li><a class="btn_appstore_desktop" href="https://apps.apple.com/de/app/octachron-midi-drum-sequencer/id1453137215" target="_blank">
-			 					 <img src="img/appstorebadge.png" width="100px" alt="Appstorebadge"></a></li>
-					</ul>
-				</div>
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden"><a href="#page-top"></a></li>
+                    <li><a class="page-scroll" href="#about">Features</a></li>
+                    <li><a class="page-scroll" href="#gallery">Gallery</a></li>
+                    <li><a class="page-scroll" href="#specs">Specs</a></li>
+                    <!-- <li><a class="page-scroll" href="#download">Download</a></li> -->
+                    <li><a class="page-scroll" href="#merch" style="color: #FFAB31">Merch</a></li>
+                    <li><a class="page-scroll" href="#contact">Contact</a></li>
+                    <li><a class="page-scroll" href="manual.html">Manual</a></li>
+                    <li><a class="btn_appstore_desktop"
+                            href="https://apps.apple.com/de/app/octachron-midi-drum-sequencer/id1453137215"
+                            target="_blank">
+                            <img src="img/appstorebadge.png" width="100px" alt="Appstorebadge"></a></li>
+                </ul>
+            </div>
             <!-- /.navbar-collapse -->
-		</div>
+        </div>
         <!-- /.container -->
-	</nav>
+    </nav>
 
     <!-- Intro Header -->
     <header class="intro">
-  		<div class="intro-body">
-  			<div class="container">
-  				<div class="row">
-  					<div class="col-md-10 col-md-offset-1">
-  						<img src="img/octachron_logo_ls_transp@2x.png" id="logo_ls" alt="Logo OCTACHRON iOS MIDI Drum Sequencer (AUv3)"/>
-              <img src="img/octachron_logo_pt_transp@2x.png" id="logo_pt" alt="Logo OCTACHRON iOS MIDI Drum Sequencer (AUv3)"/>
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1">
+                        <img src="img/octachron_logo_ls_transp@2x.png" id="logo_ls"
+                            alt="Logo OCTACHRON iOS MIDI Drum Sequencer (AUv3)" />
+                        <img src="img/octachron_logo_pt_transp@2x.png" id="logo_pt"
+                            alt="Logo OCTACHRON iOS MIDI Drum Sequencer (AUv3)" />
 
-              <p class="intro-text">Very flexible up to 16 Track iOS MIDI Drum Sequencer</br>
-                With Smart Randomizer + Trigger and CC Mutation</br>
-                <span class="stars">★★★★★</span> Five star rating on the <a href="https://apps.apple.com/de/app/octachron-midi-drum-sequencer/id1453137215" target="_blank">
-                       App Store
-                </a></br>Works standalone or as AUv3 MIDI plugin</br>iOS 12 upwards, only $ 9.99</br>Optimized for iPad and iPhone</br>Also compatible standalone with M Macs and Apple Vision Pro</br>
-              </p>
+                        <p class="intro-text">Very flexible up to 16 Track iOS MIDI Drum Sequencer</br>
+                            With Smart Randomizer + Trigger and CC Mutation</br>
+                            <span class="stars">★★★★★</span> Five star rating on the <a
+                                href="https://apps.apple.com/de/app/octachron-midi-drum-sequencer/id1453137215"
+                                target="_blank">
+                                App Store
+                            </a></br>Works standalone or as AUv3 MIDI plugin</br>iOS 12 upwards, only $
+                            9.99</br>Optimized for iPad and iPhone</br>Also compatible standalone with M Macs and Apple
+                            Vision Pro</br>
+                        </p>
 
-              <a href="https://apps.apple.com/de/app/octachron-midi-drum-sequencer/id1453137215" target="_blank">
-                     <img src="img/appstorebadge.png" width="200" height="74" alt="Appstorebadge">
-              </a>
-           </div>
-  				</div>
-  			</div>
+                        <a href="https://apps.apple.com/de/app/octachron-midi-drum-sequencer/id1453137215"
+                            target="_blank">
+                            <img src="img/appstorebadge.png" width="200" height="74" alt="Appstorebadge">
+                        </a>
+                    </div>
+                </div>
+            </div>
 
 
 
-        <!-- <a href="#quotes" class="btn btn-circle page-scroll">
+            <!-- <a href="#quotes" class="btn btn-circle page-scroll">
           <i class="fa fa-angle-double-down animated"></i>
         </a> -->
-  		</div>
-	 </header>
-
-   <!-- Video Section -->
-   <section id="quotes" class="container content-section text-center">
-       <div class="row">
-         <h2>Videos</h2><br>
-         <div class="col-md-6 col-md-offset-0">
-
-              <a href="https://youtu.be/J2LnPDZwIPU?si=lCltiPSIryoc-_9P" target="_blank"><img src="img/octachron_video.webp" width="100%"></a><br><br>
-               <p class="intro-text">OCTACHRON Demo</p>
         </div>
-        <div class="col-md-6 col-md-offset-0">
-             <a href="https://www.youtube.com/watch?v=_kzrWEdF-i8" target="_blank"><img src="img/octachron_video_2.jpg" width="100%"></a><br><br>
-             <p class="intro-text"> “OCTACHRON is almost perfect now” <a href="https://www.youtube.com/watch?v=_kzrWEdF-i8" target="_blank">- haQ attaQ</a></p>
-       </div>
-       </div>
-   </section>
+    </header>
 
-  <!-- Quotes Section -->
-  <section id="quotes" class="container content-section text-center">
-      <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-          	<h2>More Voices</h2>
+    <!-- Video Section -->
+    <section id="quotes" class="container content-section text-center">
+        <div class="row">
+            <h2>Videos</h2><br>
+            <div class="col-md-6 col-md-offset-0">
 
-          <p class="intro-text">
+                <a href="https://youtu.be/J2LnPDZwIPU?si=lCltiPSIryoc-_9P" target="_blank"><img
+                        src="img/octachron_video.webp" width="100%"></a><br><br>
+                <p class="intro-text">OCTACHRON Demo</p>
+            </div>
+            <div class="col-md-6 col-md-offset-0">
+                <a href="https://www.youtube.com/watch?v=_kzrWEdF-i8" target="_blank"><img
+                        src="img/octachron_video_2.jpg" width="100%"></a><br><br>
+                <p class="intro-text"> “OCTACHRON is almost perfect now” <a
+                        href="https://www.youtube.com/watch?v=_kzrWEdF-i8" target="_blank">- haQ attaQ</a></p>
+            </div>
+        </div>
+    </section>
 
-  <br>“An exciting MIDI sequencer with advanced features” <br> <a href="https://www.synthanatomy.com/2020/08/octachron-a-flexible-straightforward-designed-midi-sequencer-for-ios.html" target="_blank">- Synth Anatomy</a><br>
+    <!-- Quotes Section -->
+    <section id="quotes" class="container content-section text-center">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h2>More Voices</h2>
 
-  “Particularly the probability parameters are a lot of fun” <br> <a href="https://www.amazona.de/markus-teufel-octachron-midi-drum-sequenzer-ios/" target="_blank">- Amazona</a><br>
+                <p class="intro-text">
 
-  “OCTACHRON controls just everything with iPad” <br> <a href="https://www.gearnews.de/numerical-audio-octachron-flexibler-acht-track-ios-sequencer/" target="_blank">- Gearnews</a><br><br>
+                    <br>“An exciting MIDI sequencer with advanced features” <br> <a
+                        href="https://www.synthanatomy.com/2020/08/octachron-a-flexible-straightforward-designed-midi-sequencer-for-ios.html"
+                        target="_blank">- Synth Anatomy</a><br>
+
+                    “Particularly the probability parameters are a lot of fun” <br> <a
+                        href="https://www.amazona.de/markus-teufel-octachron-midi-drum-sequenzer-ios/" target="_blank">-
+                        Amazona</a><br>
+
+                    “OCTACHRON controls just everything with iPad” <br> <a
+                        href="https://www.gearnews.de/numerical-audio-octachron-flexibler-acht-track-ios-sequencer/"
+                        target="_blank">- Gearnews</a><br><br>
 
 
-       <a href="https://www.facebook.com/groups/1704410769839550/permalink/3470649949882281/" target="_blank"><img src="img/octachron_award.webp" width="60%"></a><br>
-      <br>“Favorite MIDI Sequencer - User's Choice Award 2022” <br> <a href="https://www.facebook.com/groups/1704410769839550/permalink/3470649949882281/" target="_blank">- iOS AUv3 Facebook Group</a>
+                    <a href="https://www.facebook.com/groups/1704410769839550/permalink/3470649949882281/"
+                        target="_blank"><img src="img/octachron_award.webp" width="60%"></a><br>
+                    <br>“Favorite MIDI Sequencer - User's Choice Award 2022” <br> <a
+                        href="https://www.facebook.com/groups/1704410769839550/permalink/3470649949882281/"
+                        target="_blank">- iOS AUv3 Facebook Group</a>
 
-          </p>
+                </p>
 
-       </div>
-      </div>
-  </section>
+            </div>
+        </div>
+    </section>
 
     <!-- About Section -->
     <section id="about" class="container content-section text-left">
-		<h2 class="text-center">Features</h2>
-		<p class="text-center">!!! Please just notice: OCTACHRON is a MIDI sequencer and does not create any sounds of its own !!!</p>
-		<div class="row">
-			<div class="col-md-6">
-				<h3 class="text-center">Overview</h3>
+        <h2 class="text-center">Features</h2>
+        <p class="text-center">!!! Please just notice: OCTACHRON is a MIDI sequencer and does not create any sounds of
+            its own !!!</p>
+        <div class="row">
+            <div class="col-md-6">
+                <h3 class="text-center">Overview</h3>
 
-				<ul>
-					<li>Standalone or AUv3 MIDI plugin</li>
-          <li>Works inside AUM, Cubasis, Logic Pro, Beatmaker, ApeMatrix, Nanostudio and other hosts compatible with MIDI AudioUnit (Not GarageBand)</li>
-          <li>Optimized for drums but also fun for basic melody lines</li>
-					<li>OCTACHRON is specialized in in depth MIDI sequencing and does not create any sounds of its own</li>
-          <li>1-32 steps with flexible clock divider and custom time signatures</li>
-					<li>Up to 16 mutable tracks with flexible length</li>
-					<li>Up to 8 chainable patterns (song mode)</li>
-					<li>Swing with flexible swing grid</li>
-					<li>Save, restore and export your pattern presets, MIDI files and MIDI mapping presets</li>
-					<li>Presets are shared automatically between standalone and AUv3</li>
-					<li>Parameter lock for velocity, ratcheting, offset, trigger probability, trigger condition, gate length and MIDI CC Modulation</li>
-					<li>Scales generator</li>
-          <li>MIDI control pattern selection and mute</li>
-          <li>Customizable mapping and mapping presets</li>
-          <li>Works iOS 12 upwards</li>
-					<li>Optimized for iPad and iPhone</li>
-					<li>Also compatible with M Macs and Apple Vision Pro</li>
-				</ul>
-			</div>
+                <ul>
+                    <li>Standalone or AUv3 MIDI plugin</li>
+                    <li>Works inside AUM, Cubasis, Logic Pro, Beatmaker, ApeMatrix, Nanostudio and other hosts
+                        compatible with MIDI AudioUnit (Not GarageBand)</li>
+                    <li>Optimized for drums but also fun for basic melody lines</li>
+                    <li>OCTACHRON is specialized in in depth MIDI sequencing and does not create any sounds of its own
+                    </li>
+                    <li>1-32 steps with flexible clock divider and custom time signatures</li>
+                    <li>Up to 16 mutable tracks with flexible length</li>
+                    <li>Up to 8 chainable patterns (song mode)</li>
+                    <li>Swing with flexible swing grid</li>
+                    <li>Save, restore and export your pattern presets, MIDI files and MIDI mapping presets</li>
+                    <li>Presets are shared automatically between standalone and AUv3</li>
+                    <li>Parameter lock for velocity, ratcheting, offset, trigger probability, trigger condition, gate
+                        length and MIDI CC Modulation</li>
+                    <li>Scales generator</li>
+                    <li>MIDI control pattern selection and mute</li>
+                    <li>Customizable mapping and mapping presets</li>
+                    <li>Works iOS 12 upwards</li>
+                    <li>Optimized for iPad and iPhone</li>
+                    <li>Also compatible with M Macs and Apple Vision Pro</li>
+                </ul>
+            </div>
 
-			<div class="col-md-6">
-				<h3 class="text-center">mapping presets for drum apps and hardware</h3>
-        <ul>
-          <li>AR-909, Axxon 2 & Blip Box</li>
-          <li>Dadamachines Automat, Digistix & DM1/DM2/Drumlab</li>
-          <li>DrumComputer by Sugar Bytes</li>
-          <li>EGDR 606, 808 & 909</li>
-          <li>FAC Drumkit & Hammerhead</li>
-					<li>Koala Sampler & Korg Gadgets</li>
-          <li>MV08, NS2 Slate</li>
-          <li>OneShot, Pure Acid Drums</li>
-          <li>Ruismaker & Ruismaker FM</li>
-          <li>SDS-X, Sitala & Splat-To-Clat</li>
-	  			<li>VA DrumSM, VA Drum2 808 & 909</li>
-          <li>Vatanator</li>
-        </ul>
- 	<ul>
-          <li>Korg Electribe EMX & ER-1</li>
-	  <li>Korg Volca Beats & Drumlogue</li>
-	  <li>MFB 522</li>
-          <li>Roland MC-101</li>
-	  <li>Roland TR-08 & TR-8S</li>
-          <li>Roland TR-707 & 727</li>
-	  <li>Roland TR-808</li>
-	  <li>Roland TR-909</li>
-	</ul>
-	<ul>
-          <li>Also save, load and share your own MIDI mappings ...</li>
-        </ul>
-			</div>
-		</div>
+            <div class="col-md-6">
+                <h3 class="text-center">mapping presets for drum apps and hardware</h3>
+                <ul>
+                    <li>AR-909, Axxon 2 & Blip Box</li>
+                    <li>Dadamachines Automat, Digistix & DM1/DM2/Drumlab</li>
+                    <li>DrumComputer by Sugar Bytes</li>
+                    <li>EGDR 606, 808 & 909</li>
+                    <li>FAC Drumkit & Hammerhead</li>
+                    <li>Koala Sampler & Korg Gadgets</li>
+                    <li>MV08, NS2 Slate</li>
+                    <li>OneShot, Pure Acid Drums</li>
+                    <li>Ruismaker & Ruismaker FM</li>
+                    <li>SDS-X, Sitala & Splat-To-Clat</li>
+                    <li>VA DrumSM, VA Drum2 808 & 909</li>
+                    <li>Vatanator</li>
+                </ul>
+                <ul>
+                    <li>Korg Electribe EMX & ER-1</li>
+                    <li>Korg Volca Beats & Drumlogue</li>
+                    <li>MFB 522</li>
+                    <li>Roland MC-101</li>
+                    <li>Roland TR-08 & TR-8S</li>
+                    <li>Roland TR-707 & 727</li>
+                    <li>Roland TR-808</li>
+                    <li>Roland TR-909</li>
+                </ul>
+                <ul>
+                    <li>Also save, load and share your own MIDI mappings ...</li>
+                </ul>
+            </div>
+        </div>
 
-    <div class="row">
-      <div class="col-md-6">
-        <h3 class="text-center">Smart Randomizer</h3>
+        <div class="row">
+            <div class="col-md-6">
+                <h3 class="text-center">Smart Randomizer</h3>
 
-        <ul>
-          <li>Smart pattern randomizer</li>
-          <li>Randomizer configuration per track</li>
-          <li>Trigger mutation per track</li>
-          <li>Mutation of internal and CC modulation parameters</li>
-        </ul>
-      </div>
+                <ul>
+                    <li>Smart pattern randomizer</li>
+                    <li>Randomizer configuration per track</li>
+                    <li>Trigger mutation per track</li>
+                    <li>Mutation of internal and CC modulation parameters</li>
+                </ul>
+            </div>
 
-      <div class="col-md-6">
-        <h3 class="text-center">Track Settings</h3>
+            <div class="col-md-6">
+                <h3 class="text-center">Track Settings</h3>
 
-        <ul>
-          <li>Assign MIDI notes to each track or use mapping presets</li>
-          <li>Individual track length to create polyrhythms</li>
-          <li>Mute tracks to easily create build ups in live situations</li>
-        </ul>
-      </div>
-    </div>
+                <ul>
+                    <li>Assign MIDI notes to each track or use mapping presets</li>
+                    <li>Individual track length to create polyrhythms</li>
+                    <li>Mute tracks to easily create build ups in live situations</li>
+                </ul>
+            </div>
+        </div>
 
-		<div class="row">
-      <div class="col-md-6">
-        <h3 class="text-center">Connectivity</h3>
+        <div class="row">
+            <div class="col-md-6">
+                <h3 class="text-center">Connectivity</h3>
 
-        <ul>
-          <li>OCTACHRON lets you sequence other standalone apps, AUv3 AudioUnits or external hardware via MIDI</li>
-          <li>OCTACHRON derives its timing from its host application, its internal clock or via AbletonLink</li>
-					<li>Trigger on different MIDI channels per track</li>
-        </ul>
-      </div>
+                <ul>
+                    <li>OCTACHRON lets you sequence other standalone apps, AUv3 AudioUnits or external hardware via MIDI
+                    </li>
+                    <li>OCTACHRON derives its timing from its host application, its internal clock or via AbletonLink
+                    </li>
+                    <li>Trigger on different MIDI channels per track</li>
+                </ul>
+            </div>
 
-      <div class="col-md-6">
-        <h3 class="text-center">And more ...</h3>
+            <div class="col-md-6">
+                <h3 class="text-center">And more ...</h3>
 
-        <ul>
-          <li>OCTACHRON works offline</li>
-          <li>No push notifications</li>
-          <li>No ads or in-app purchases</li>
-          <li>No tracking tools</li>
-					<li>Active on social media and in the mobile music community</li>
-          <li>Ongoing development and support and many new features on the list</li>
-        </ul>
-      </div>
+                <ul>
+                    <li>OCTACHRON works offline</li>
+                    <li>No push notifications</li>
+                    <li>No ads or in-app purchases</li>
+                    <li>No tracking tools</li>
+                    <li>Active on social media and in the mobile music community</li>
+                    <li>Ongoing development and support and many new features on the list</li>
+                </ul>
+            </div>
 
-		</div>
+        </div>
 
-		</div>
+        </div>
 
-	</section>
+    </section>
 
     <!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
     <div id="blueimp-gallery" class="blueimp-gallery" data-use-bootstrap-modal="false">
@@ -270,32 +303,33 @@
         <a class="close">×</a>
         <a class="play-pause"></a>
 
-		<ol class="indicator"></ol>
+        <ol class="indicator"></ol>
         <!-- The modal dialog, which will be used to wrap the lightbox content -->
         <div class="modal fade">
-			<div class="modal-dialog">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close" aria-hidden="true">&times;</button>
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" aria-hidden="true">&times;</button>
 
-						<h4 class="modal-title"></h4>
-					</div>
+                        <h4 class="modal-title"></h4>
+                    </div>
 
-					<div class="modal-body next"></div>
+                    <div class="modal-body next"></div>
 
-					<div class="modal-footer">
-						<button type="button" class="btn btn-default pull-left prev"><i class="glyphicon glyphicon-chevron-left"></i>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default pull-left prev"><i
+                                class="glyphicon glyphicon-chevron-left"></i>
                             Previous</button>
 
-						<button type="button" class="btn btn-primary next">Next
+                        <button type="button" class="btn btn-primary next">Next
                             <i class="glyphicon glyphicon-chevron-right"></i></button>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-  <!-- Gallery Section
+    <!-- Gallery Section
   <section id="gallery" class="content-section text-center">
   <div class="gallery-section">
     <div class="container">
@@ -319,262 +353,362 @@
 
     <!-- Gallery Section -->
     <section id="gallery" class="content-section text-center">
-    <div class="gallery-section">
-      <div class="container">
-        <div class="col-lg-10 col-lg-offset-1">
-          <h2>Gallery</h2>
+        <div class="gallery-section">
+            <div class="container">
+                <div class="col-lg-10 col-lg-offset-1">
+                    <h2>Gallery</h2>
 
-          <div id="links">
-            <a href="img/02_aum.webp" title="OCTACHRON iOS MIDI Drum Sequencer (AUv3)" data-gallery>
-                <img src="img/02_aum.webp" alt="OCTACHRON iOS MIDI Drum Sequencer (AUv3)" height="150px" class="gallery">
-            </a>
-            <a href="img/OCTACHRON_06_Pattern.webp" title="OCTACHRON iOS MIDI Drum Sequencer (AUv3)" data-gallery>
-            <img src="img/OCTACHRON_06_Pattern.webp" alt="OCTACHRON iOS MIDI Drum Sequencer (AUv3)" height="150px" class="gallery">
+                    <div id="links">
+                        <a href="img/02_aum.webp" title="OCTACHRON iOS MIDI Drum Sequencer (AUv3)" data-gallery>
+                            <img src="img/02_aum.webp" alt="OCTACHRON iOS MIDI Drum Sequencer (AUv3)" height="150px"
+                                class="gallery">
                         </a>
-                        <a href="img/OCTACHRON_04_Randomizer.webp" title="OCTACHRON iOS MIDI Drum Sequencer (AUv3)" data-gallery>
-              <img src="img/OCTACHRON_04_Randomizer.webp" alt="OCTACHRON iOS MIDI Drum Sequencer (AUv3)" height="150px" class="gallery">
+                        <a href="img/OCTACHRON_06_Pattern.webp" title="OCTACHRON iOS MIDI Drum Sequencer (AUv3)"
+                            data-gallery>
+                            <img src="img/OCTACHRON_06_Pattern.webp" alt="OCTACHRON iOS MIDI Drum Sequencer (AUv3)"
+                                height="150px" class="gallery">
                         </a>
-                        <a href="img/OCTACHRON_05_CC-Mutation.webp" title="OCTACHRON iOS MIDI Drum Sequencer (AUv3)" data-gallery>
-              <img src="img/OCTACHRON_05_CC-Mutation.webp" alt="OCTACHRON iOS MIDI Drum Sequencer (AUv3)" height="150px" class="gallery">
+                        <a href="img/OCTACHRON_04_Randomizer.webp" title="OCTACHRON iOS MIDI Drum Sequencer (AUv3)"
+                            data-gallery>
+                            <img src="img/OCTACHRON_04_Randomizer.webp" alt="OCTACHRON iOS MIDI Drum Sequencer (AUv3)"
+                                height="150px" class="gallery">
                         </a>
-												<a href="img/OCTACHRON_iPhone_02.webp" title="OCTACHRON iOS MIDI Drum Sequencer (AUv3)" data-gallery>
-						                <img src="img/OCTACHRON_iPhone_02.webp" alt="OCTACHRON iOS MIDI Drum Sequencer (AUv3)" height="150px" class="gallery">
-						            </a>
-						            <a href="img/OCTACHRON_iPhone_04.png" title="OCTACHRON iOS MIDI Drum Sequencer (AUv3)" data-gallery>
-						            <img src="img/OCTACHRON_iPhone_04.png" alt="OCTACHRON iOS MIDI Drum Sequencer (AUv3)" height="150px" class="gallery">
-						                        </a>
-						                        <a href="img/OCTACHRON_iPhone_05.png" title="OCTACHRON iOS MIDI Drum Sequencer (AUv3)" data-gallery>
-						              <img src="img/OCTACHRON_iPhone_05.png" alt="OCTACHRON iOS MIDI Drum Sequencer (AUv3)" height="150px" class="gallery">
-						                        </a>
-						                        <a href="img/OCTACHRON_iPhone_06.png" title="OCTACHRON iOS MIDI Drum Sequencer (AUv3)" data-gallery>
-						              <img src="img/OCTACHRON_iPhone_06.png" alt="OCTACHRON iOS MIDI Drum Sequencer (AUv3)" height="150px" class="gallery">
-						                        </a>
-          </div>
+                        <a href="img/OCTACHRON_05_CC-Mutation.webp" title="OCTACHRON iOS MIDI Drum Sequencer (AUv3)"
+                            data-gallery>
+                            <img src="img/OCTACHRON_05_CC-Mutation.webp" alt="OCTACHRON iOS MIDI Drum Sequencer (AUv3)"
+                                height="150px" class="gallery">
+                        </a>
+                        <a href="img/OCTACHRON_iPhone_02.webp" title="OCTACHRON iOS MIDI Drum Sequencer (AUv3)"
+                            data-gallery>
+                            <img src="img/OCTACHRON_iPhone_02.webp" alt="OCTACHRON iOS MIDI Drum Sequencer (AUv3)"
+                                height="150px" class="gallery">
+                        </a>
+                        <a href="img/OCTACHRON_iPhone_04.png" title="OCTACHRON iOS MIDI Drum Sequencer (AUv3)"
+                            data-gallery>
+                            <img src="img/OCTACHRON_iPhone_04.png" alt="OCTACHRON iOS MIDI Drum Sequencer (AUv3)"
+                                height="150px" class="gallery">
+                        </a>
+                        <a href="img/OCTACHRON_iPhone_05.png" title="OCTACHRON iOS MIDI Drum Sequencer (AUv3)"
+                            data-gallery>
+                            <img src="img/OCTACHRON_iPhone_05.png" alt="OCTACHRON iOS MIDI Drum Sequencer (AUv3)"
+                                height="150px" class="gallery">
+                        </a>
+                        <a href="img/OCTACHRON_iPhone_06.png" title="OCTACHRON iOS MIDI Drum Sequencer (AUv3)"
+                            data-gallery>
+                            <img src="img/OCTACHRON_iPhone_06.png" alt="OCTACHRON iOS MIDI Drum Sequencer (AUv3)"
+                                height="150px" class="gallery">
+                        </a>
+                    </div>
 
-				</div>
+                </div>
 
-      </div>
-		</div>
-	 </section>
+            </div>
+        </div>
+    </section>
 
     <!-- FAQ Section -->
     <section id="specs" class="container content-section text-left">
-		<div class="row">
-			<div class="col-lg-8 col-lg-offset-2">
-				<h2>Specs</h2>
-				<div class="col-md-6">
-					<h3>Sequencer</h3>
-					<ul>
-						<li>1-32 steps</li>
-						<li>1-16 tracks</li>
-						<li>8 patterns</li>
-            <li>Smart Randomizer</li>
-            <li>Mutation</li>
-						<li>Pattern chaining</li>
-						<li>Swing</li>
-						<li>Flexible swing grids</li>
-					</ul>
-				</div>
-				<div class="col-md-6">
-					<h3>Pattern</h3>
-					<ul>
-						<li>Song mode</li>
-						<li>Pattern chaining</li>
-						<li>Pattern repeat</li>
-						<li>Copy / Paste</li>
-					</ul>
-				</div>
-			</div>
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Specs</h2>
+                <div class="col-md-6">
+                    <h3>Sequencer</h3>
+                    <ul>
+                        <li>1-32 steps</li>
+                        <li>1-16 tracks</li>
+                        <li>8 patterns</li>
+                        <li>Smart Randomizer</li>
+                        <li>Mutation</li>
+                        <li>Pattern chaining</li>
+                        <li>Swing</li>
+                        <li>Flexible swing grids</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h3>Pattern</h3>
+                    <ul>
+                        <li>Song mode</li>
+                        <li>Pattern chaining</li>
+                        <li>Pattern repeat</li>
+                        <li>Copy / Paste</li>
+                    </ul>
+                </div>
+            </div>
 
-			<div class="col-lg-8 col-lg-offset-2">
-				<div class="col-md-6">
-					<h3>Parameter Lock</h3>
-					<ul>
-						<li>Velocity</li>
-						<li>Ratcheting</li>
-						<li>Offset</li>
-						<li>Trigger probability</li>
-            <li>Trigger condition</li>
-						<li>Gate length</li>
-						<li>8 CCs per Track</li>
-            <li>Mutation of Internal and CC Modulation</li>
-					</ul>
-				</div>
-				<div class="col-md-6">
-					<h3>Track</h3>
-					<ul>
-						<li>Individual length</li>
-						<li>Mute</li>
-					</ul>
-				</div>
-			</div>
+            <div class="col-lg-8 col-lg-offset-2">
+                <div class="col-md-6">
+                    <h3>Parameter Lock</h3>
+                    <ul>
+                        <li>Velocity</li>
+                        <li>Ratcheting</li>
+                        <li>Offset</li>
+                        <li>Trigger probability</li>
+                        <li>Trigger condition</li>
+                        <li>Gate length</li>
+                        <li>8 CCs per Track</li>
+                        <li>Mutation of Internal and CC Modulation</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h3>Track</h3>
+                    <ul>
+                        <li>Individual length</li>
+                        <li>Mute</li>
+                    </ul>
+                </div>
+            </div>
 
-			<div class="col-lg-8 col-lg-offset-2">
-				<div class="col-md-6">
-					<h3>Mapping</h3>
-					<ul>
-						<li>Edit MIDI note per track</li>
-						<li>Edit CC addresses</li>
-						<li>Presets for popular drum apps and hardware</li>
-					</ul>
-				</div>
-				<div class="col-md-6">
-					<h3>Application</h3>
-					<ul>
-						<li>Standalone</li>
-						<li>Audio Unit v3 Extension</li>
-						<li>Ableton LINK</li>
-						<li>MIDI out</li>
-					</ul>
-				</div>
-			</div>
+            <div class="col-lg-8 col-lg-offset-2">
+                <div class="col-md-6">
+                    <h3>Mapping</h3>
+                    <ul>
+                        <li>Edit MIDI note per track</li>
+                        <li>Edit CC addresses</li>
+                        <li>Presets for popular drum apps and hardware</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h3>Application</h3>
+                    <ul>
+                        <li>Standalone</li>
+                        <li>Audio Unit v3 Extension</li>
+                        <li>Ableton LINK</li>
+                        <li>MIDI out</li>
+                    </ul>
+                </div>
+            </div>
 
-		</div>
-	</section>
+        </div>
+    </section>
 
     <!-- Download Section -->
     <section id="download" class="content-section text-center">
-		<div class="download-section">
-			<div class="container">
-				<div class="col-lg-8 col-lg-offset-2">
-					<h2>Download</h2>
+        <div class="download-section">
+            <div class="container">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h2>Download</h2>
 
-					<p>Download OCTACHRON on the App Store:</p>
+                    <p>Download OCTACHRON on the App Store:</p>
 
-          <a href="https://apps.apple.com/de/app/octachron-midi-drum-sequencer/id1453137215" target="_blank">
-                 <img src="img/appstorebadge.png" width="200" height="74" alt="Appstorebadge">
-          </a></div>
-			</div>
-		</div>
-	</section>
+                    <a href="https://apps.apple.com/de/app/octachron-midi-drum-sequencer/id1453137215" target="_blank">
+                        <img src="img/appstorebadge.png" width="200" height="74" alt="Appstorebadge">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-	<!-- Merch Section -->
-	<section id="merch" class="container content-section text-center">
-	<div class="row">
-		<div class="col-lg-8 col-lg-offset-2">
-			<h2>New: Octachron Merch Shop</h2>
-			<p>
-			<br>
-			<img src="img/OCTACHRON_Merch_Shop.webp" width="90%" height="" alt="OCTACHRON_Merch_Shop">
+    <!-- Merch Section -->
+    <section id="merch" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Super Cool: Octachron Merch Shop</h2>
+                <p>
+                    <br>
+                    <img src="img/OCTACHRON_Merch_Shop.webp" width="90%" height="" alt="OCTACHRON_Merch_Shop">
 
-			<br><br>
-					<a href="https://octachron.myspreadshop.com/" target="_blank">OCTACHRON Merch Shop shipping from US</a><br>
-					<a href="https://octachron.myspreadshop.de/" target="_blank">OCTACHRON Merch Shop shipping from EU</a>
-			<br>
-			</p>
-	</div>
-	</section>
+                    <br><br>
+                    <a href="https://octachron.myspreadshop.com/" target="_blank">OCTACHRON Merch Shop shipping from
+                        US</a><br>
+                    <a href="https://octachron.myspreadshop.de/" target="_blank">OCTACHRON Merch Shop shipping from
+                        EU</a>
+                    <br>
+                </p>
+            </div>
+    </section>
 
     <!-- Contact Section -->
     <section id="contact" class="container content-section text-center">
-		<div class="row">
-			<div class="col-lg-8 col-lg-offset-2">
-				<h2>Contact</h2>
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Contact</h2>
 
-				<p>Do you have questions or feedback on OCTACHRON?<br><br>
+                <p>Do you have questions or feedback on OCTACHRON?<br><br>
 
-					Best way is, if you tag us in a comment under a social post from us, then others can benefit from it as well.<br>
+                    Best way is, if you tag us in a comment under a social post from us, then others can benefit from it
+                    as well.<br>
 
-		        Also follow us there for nice jams and latest updates ...<br>
+                    Also follow us there for nice jams and latest updates ...<br>
 
-						<a href="https://bsky.app/profile/octachron-app.bsky.social" target="_blank" title="On Bluesky"><img src="img/icon-bluesky-white.svg" class="social"></a>
-						<a href="https://www.facebook.com/profile.php?id=100081592126264" target="_blank" title="On Facebook"><img src="img/icon-facebook-6.svg" class="social"></a>
-		        <a href="https://www.instagram.com/octachron_ios_drum_sequencer/profilecard/?igsh=MTg4b204bGdic2Vmaw==" target="_blank" title="On Instagram"><img src="img/icon-instagram-11.svg" class="social"></a>
-		        <a href="https://www.youtube.com/channel/UCIos3VyvFeK8eXQvLxLs8tA" target="_blank" title="On Youtube"><img src="img/icon-youtube-6.svg" class="social"></a>
-		        <a href="https://www.tiktok.com/@octachron_ios_drum_seq?_t=8p7LTvjAiYK&_r=1" target="_blank" title="On Tiktok"><img src="img/icon_tiktok.svg" class="social"></a>
-		      <br><br>
+                    <a href="https://bsky.app/profile/octachron-app.bsky.social" target="_blank" title="On Bluesky"><img
+                            src="img/icon-bluesky-white.svg" class="social"></a>
+                    <a href="https://www.facebook.com/profile.php?id=100081592126264" target="_blank"
+                        title="On Facebook"><img src="img/icon-facebook-6.svg" class="social"></a>
+                    <a href="https://www.instagram.com/octachron_ios_drum_sequencer/profilecard/?igsh=MTg4b204bGdic2Vmaw=="
+                        target="_blank" title="On Instagram"><img src="img/icon-instagram-11.svg" class="social"></a>
+                    <a href="https://www.youtube.com/channel/UCIos3VyvFeK8eXQvLxLs8tA" target="_blank"
+                        title="On Youtube"><img src="img/icon-youtube-6.svg" class="social"></a>
+                    <a href="https://www.tiktok.com/@octachron_ios_drum_seq?_t=8p7LTvjAiYK&_r=1" target="_blank"
+                        title="On Tiktok"><img src="img/icon_tiktok.svg" class="social"></a>
+                    <br><br>
 
-					Or check out the OCTACHRON thread in the
+                    Or check out the OCTACHRON thread in the
 
-        	<a href="https://forum.loopypro.com/discussion/32757/octachron-midi-drum-sequencer-auv3-by-markus-teufel/p1" target="_blank">Loopy Pro Forum</a><br><br>
+                    <a href="https://forum.loopypro.com/discussion/32757/octachron-midi-drum-sequencer-auv3-by-markus-teufel/p1"
+                        target="_blank">Loopy Pro Forum</a><br><br>
 
-		</div>
-	</section>
+            </div>
+    </section>
 
-	<!-- Imprint Section -->
-	<section id="imprint" class="content-section text-center">
-		<div class="press-section">
-		<div class="container">
-			<div class="col-lg-8 col-lg-offset-2">
-				<h2>Imprint<br>& Business Contact</h2>
-				<p>Markus Teufel<br>
-					Waldfriedhofstr. 45<br>
-					81377 Munich<br>
-					Germany<br><br>
+    <!-- Imprint Section -->
+    <section id="imprint" class="content-section text-center">
+        <div class="press-section">
+            <div class="container">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h2>Imprint<br>& Business Contact</h2>
+                    <p>Markus Teufel<br>
+                        Waldfriedhofstr. 45<br>
+                        81377 Munich<br>
+                        Germany<br><br>
 
-					mail at octachron . de<br>
-				</p>
-			</div>
-		</div>
-	</div>
-</section>
+                        mail at octachron . de<br>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Press Section -->
     <section id="press" class="content-section text-center">
-			<div class="container">
-				<div class="col-lg-8 col-lg-offset-2">
-					<h2>Press</h2>
-					<p>If you like to review OCTACHRON, please download our <a href="res/OCTACHRON_PressKit.zip">press kit.</a></p>
-				</div>
-			</div>
-	</section>
+        <div class="container">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Press</h2>
+                <p>If you like to review OCTACHRON, please download our <a href="res/OCTACHRON_PressKit.zip">press
+                        kit.</a></p>
+            </div>
+        </div>
+    </section>
 
 
-  <!-- THX Section -->
-<section id="thx" class="content-section text-center">
-	<div class="container">
-		<div class="col-lg-8 col-lg-offset-2">
-			<h2>THX</h2>
-			<p>We would also like to thank all our dear collaborators, partners and special supporters! Please check them out!
-			</p>
-			<p>
-			<a href="https://www.instagram.com/reel/Cuhkin1gGBG/?igshid=MzRlODBiNWFlZA==" target="_blank">Afrikan Sciences • </a> <a href="https://www.instagram.com/reel/CsDv_egARaX/?igsh=ZjhnMTk1YTk4bWEy" target="_blank">Alex Matheu • </a> <a href="https://www.facebook.com/profile.php?id=100008843708255" target="_blank">Ali Ahmet • </a> <a href="https://www.instagram.com/p/CvsaRUroiiv/?igshid=MzRlODBiNWFlZA==" target="_blank">Aliencharm Art • </a> <a href="https://www.instagram.com/reel/CwxqH1rt2Ik/?igshid=MzRlODBiNWFlZA==" target="_blank">Bahadir Varoglu • </a>
-			<a href="https://www.facebook.com/brsherry" target="_blank">Bill Sherry • </a> <a href="https://www.instagram.com/reel/CszNbtrr8y_/?igshid=MzRlODBiNWFlZA==
-" target="_blank">Bram Bos • </a> <a href="https://www.instagram.com/cgkrupa/reel/C5GICTGtAvR/" target="_blank">Christian Krupa • </a> <a href="https://www.instagram.com/reel/Cw5mtzcME-B/?igshid=MzRlODBiNWFlZA==" target="_blank">Das Goods • </a> <a href="https://forum.audiob.us/profile/dmnc" target="_blank">dmnc • </a>
-			<a href="https://youtu.be/h6lFX-j7V7M?si=iLvIg1ya-g9qt3oO" target="_blank">Ed The Outcast • </a> <a href="https://www.instagram.com/reel/CtIIOGduR3l/?igshid=MzRlODBiNWFlZA==" target="_blank">Elastic Limit • </a> <a href="https://www.instagram.com/reel/Cq4t8w4I_dW/?igshid=MzRlODBiNWFlZA==" target="_blank">Emmanuel Signorino • </a> <a href="https://www.instagram.com/reel/CxllGgOxvWx/?igshid=MzRlODBiNWFlZA==" target="_blank">Emmies Band • </a> <a href="https://www.instagram.com/reel/CxJJhz3Rzpd/?igshid=MzRlODBiNWFlZA==sd" target="_blank">Ender Wiggins 23 • </a>
-			<a href="https://www.instagram.com/reel/CvA-Va8ABpU/?igshid=MzRlODBiNWFlZA==
-" target="_blank">Fernando Morales • </a> <a href="https://www.instagram.com/reel/CnVTesXrs2b/?igshid=MzRlODBiNWFlZA==" target="_blank">Flying Zulu • </a> <a href="https://www.instagram.com/reel/CpIu4VcPq2h/?igshid=MzRlODBiNWFlZA==" target="_blank">Fred Anton Corvest • </a> <a href="https://www.instagram.com/reel/Cut648iu4DO/?igshid=MzRlODBiNWFlZA==" target="_blank">Gavinsky’s Tutorials • </a> <a href="https://www.instagram.com/reel/CpOKwMoAbMM/?igshid=MzRlODBiNWFlZA==" target="_blank">Gianluca Cataboom • </a>
-			<a href="https://grantlerrecords.com/" target="_blank">Grantler Records • </a> <a href="https://www.instagram.com/reel/C4AxWp7tO7k/?igsh=ZW1zYzJsdTl6c2d2" target="_blank">Ilan on Bass • </a> <a href="https://www.instagram.com/tv/CHmcOnqBPva/?igshid=MzRlODBiNWFlZA==" target="_blank">J Lugo Miller • </a> <a href="https://www.youtube.com/live/saa4kGjE9v4?feature=shared" target="_blank">Jade Starr • </a> <a href="https://www.youtube.com/watch?v=_kzrWEdF-i8" target="_blank">Jakob Haq • </a>
-			<a href="https://www.instagram.com/reel/Ct5nIFHL-yu/?igshid=MzRlODBiNWFlZA==" target="_blank">James Redou • </a>
-			<a href="https://youtu.be/YVhd4bPobMI?si=pf3IUa7yiRATqRQA" target="_blank">
-Jamie Mallender • </a> <a href="https://www.instagram.com/reel/CoGIa87qNf_/?igshid=MzRlODBiNWFlZA==" target="_blank">Jo Gutsche • </a> <a href="https://www.facebook.com/703494368/videos/606106441711783" target="_blank">Johann Gantineau • </a> <a href="https://www.instagram.com/reel/CpAfHiVgqB2/?igshid=MzRlODBiNWFlZA==" target="_blank">John McCoy • </a> <a href="https://www.facebook.com/jonatan.liljedahl" target="_blank">Jonatan Liljedahl (AUM) • </a>
-<a href="https://www.instagram.com/reel/CvnOijhN85d/?igshid=MzRlODBiNWFlZA==" target="_blank">
-Kai Aras • </a> <a href="https://www.instagram.com/reel/CtCEA5LsA7M/?igshid=MzRlODBiNWFlZA==" target="_blank">Koala Creative Community • </a> <a href="https://www.instagram.com/reel/CyJe6GiN2kI/?igshid=MzRlODBiNWFlZA== https://www.instagram.com/reel/CyJe6GiN2kI/?igshid=MzRlODBiNWFlZA==
-" target="_blank">Koala Sampler • </a> <a href="https://www.instagram.com/reel/Cky-mAKOJgi/?igshid=MzRlODBiNWFlZA==" target="_blank">Les Productions Zvon • </a> <a href="https://ultracello.de/" target="_blank">Matthias Marggraf • </a> <a href="https://www.instagram.com/reel/Cpazd2QuBew/?igshid=MzRlODBiNWFlZA==
+    <!-- THX Section -->
+    <section id="thx" class="content-section text-center">
+        <div class="container">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>THX</h2>
+                <p>We would also like to thank all our dear collaborators, partners and special supporters! Please check
+                    them out!
+                </p>
+                <p>
+                    <a href="https://www.instagram.com/reel/Cuhkin1gGBG/?igshid=MzRlODBiNWFlZA=="
+                        target="_blank">Afrikan Sciences • </a> <a
+                        href="https://www.instagram.com/reel/CsDv_egARaX/?igsh=ZjhnMTk1YTk4bWEy" target="_blank">Alex
+                        Matheu • </a> <a href="https://www.facebook.com/profile.php?id=100008843708255"
+                        target="_blank">Ali Ahmet • </a> <a
+                        href="https://www.instagram.com/p/CvsaRUroiiv/?igshid=MzRlODBiNWFlZA=="
+                        target="_blank">Aliencharm Art • </a> <a
+                        href="https://www.instagram.com/reel/CwxqH1rt2Ik/?igshid=MzRlODBiNWFlZA=="
+                        target="_blank">Bahadir Varoglu • </a>
+                    <a href="https://www.facebook.com/brsherry" target="_blank">Bill Sherry • </a> <a href="https://www.instagram.com/reel/CszNbtrr8y_/?igshid=MzRlODBiNWFlZA==
+" target="_blank">Bram Bos • </a> <a href="https://www.instagram.com/cgkrupa/reel/C5GICTGtAvR/"
+                        target="_blank">Christian Krupa • </a> <a
+                        href="https://www.instagram.com/reel/Cw5mtzcME-B/?igshid=MzRlODBiNWFlZA==" target="_blank">Das
+                        Goods • </a> <a href="https://forum.audiob.us/profile/dmnc" target="_blank">dmnc • </a>
+                    <a href="https://youtu.be/h6lFX-j7V7M?si=iLvIg1ya-g9qt3oO" target="_blank">Ed The Outcast • </a> <a
+                        href="https://www.instagram.com/reel/CtIIOGduR3l/?igshid=MzRlODBiNWFlZA=="
+                        target="_blank">Elastic Limit • </a> <a
+                        href="https://www.instagram.com/reel/Cq4t8w4I_dW/?igshid=MzRlODBiNWFlZA=="
+                        target="_blank">Emmanuel Signorino • </a> <a
+                        href="https://www.instagram.com/reel/CxllGgOxvWx/?igshid=MzRlODBiNWFlZA=="
+                        target="_blank">Emmies Band • </a> <a
+                        href="https://www.instagram.com/reel/CxJJhz3Rzpd/?igshid=MzRlODBiNWFlZA==sd"
+                        target="_blank">Ender Wiggins 23 • </a>
+                    <a href="https://www.instagram.com/reel/CvA-Va8ABpU/?igshid=MzRlODBiNWFlZA==
+" target="_blank">Fernando Morales • </a> <a href="https://www.instagram.com/reel/CnVTesXrs2b/?igshid=MzRlODBiNWFlZA=="
+                        target="_blank">Flying Zulu • </a> <a
+                        href="https://www.instagram.com/reel/CpIu4VcPq2h/?igshid=MzRlODBiNWFlZA==" target="_blank">Fred
+                        Anton Corvest • </a> <a
+                        href="https://www.instagram.com/reel/Cut648iu4DO/?igshid=MzRlODBiNWFlZA=="
+                        target="_blank">Gavinsky’s Tutorials • </a> <a
+                        href="https://www.instagram.com/reel/CpOKwMoAbMM/?igshid=MzRlODBiNWFlZA=="
+                        target="_blank">Gianluca Cataboom • </a>
+                    <a href="https://grantlerrecords.com/" target="_blank">Grantler Records • </a> <a
+                        href="https://www.instagram.com/reel/C4AxWp7tO7k/?igsh=ZW1zYzJsdTl6c2d2" target="_blank">Ilan on
+                        Bass • </a> <a href="https://www.instagram.com/tv/CHmcOnqBPva/?igshid=MzRlODBiNWFlZA=="
+                        target="_blank">J Lugo Miller • </a> <a
+                        href="https://www.youtube.com/live/saa4kGjE9v4?feature=shared" target="_blank">Jade Starr • </a>
+                    <a href="https://www.youtube.com/watch?v=_kzrWEdF-i8" target="_blank">Jakob Haq • </a>
+                    <a href="https://www.instagram.com/reel/Ct5nIFHL-yu/?igshid=MzRlODBiNWFlZA==" target="_blank">James
+                        Redou • </a>
+                    <a href="https://youtu.be/YVhd4bPobMI?si=pf3IUa7yiRATqRQA" target="_blank">
+                        Jamie Mallender • </a> <a
+                        href="https://www.instagram.com/reel/CoGIa87qNf_/?igshid=MzRlODBiNWFlZA==" target="_blank">Jo
+                        Gutsche • </a> <a href="https://www.facebook.com/703494368/videos/606106441711783"
+                        target="_blank">Johann Gantineau • </a> <a
+                        href="https://www.instagram.com/reel/CpAfHiVgqB2/?igshid=MzRlODBiNWFlZA==" target="_blank">John
+                        McCoy • </a> <a href="https://www.facebook.com/jonatan.liljedahl" target="_blank">Jonatan
+                        Liljedahl (AUM) • </a>
+                    <a href="https://www.instagram.com/reel/CvnOijhN85d/?igshid=MzRlODBiNWFlZA==" target="_blank">
+                        Kai Aras • </a> <a href="https://www.instagram.com/reel/CtCEA5LsA7M/?igshid=MzRlODBiNWFlZA=="
+                        target="_blank">Koala Creative Community • </a> <a href="https://www.instagram.com/reel/CyJe6GiN2kI/?igshid=MzRlODBiNWFlZA== https://www.instagram.com/reel/CyJe6GiN2kI/?igshid=MzRlODBiNWFlZA==
+" target="_blank">Koala Sampler • </a> <a href="https://www.instagram.com/reel/Cky-mAKOJgi/?igshid=MzRlODBiNWFlZA=="
+                        target="_blank">Les Productions Zvon • </a> <a href="https://ultracello.de/"
+                        target="_blank">Matthias Marggraf • </a> <a href="https://www.instagram.com/reel/Cpazd2QuBew/?igshid=MzRlODBiNWFlZA==
 
-" target="_blank">Mylene Kroon • </a> <a href="https://www.facebook.com/nathan.cherney.7" target="_blank">Nathan Snow • </a> <a href="https://www.facebook.com/profile.php?id=100078307773177" target="_blank">Nicolas Lebrun • </a> <a href="https://www.instagram.com/reel/C0X9MLFOFlb/?igshid=MzRlODBiNWFlZA==" target="_blank">Nino Beatz • </a>
-<a href="https://www.instagram.com/reel/Cn6VWhvujFl/?igshid=MzRlODBiNWFlZA==" target="_blank">Omar Soriano Lopez • </a> <a href="https://www.instagram.com/reel/CnxpE67r58c/?igshid=MzRlODBiNWFlZA==" target="_blank">Pedeplei • </a> <a href="https://www.instagram.com/reel/Cjf8f6av9fk/?igshid=MzRlODBiNWFlZA==" target="_blank">Perplex On • </a> <a href="https://www.instagram.com/reel/Ct2jmdMtW7e/?igshid=MzRlODBiNWFlZA==" target="_blank">Peter Steinberg • </a>
-<a href="https://www.instagram.com/reel/C4Dx4_MOXI9/?igsh=bHIxcnR1MXNubW53" target="_blank">Professor Hipstirz • </a>
-<a href="https://www.instagram.com/reel/CtmCmIDJYQo/?igshid=MzRlODBiNWFlZA==" target="_blank">Rémi MZ • </a> <a href="https://www.youtube.com/watch?v=U22m4LqKoy4" target="_blank">Roikat • </a> <a href="https://www.instagram.com/reel/Cp-vJF3PKvj/?igshid=MzRlODBiNWFlZA==" target="_blank">Rooshie Music • </a> <a href="https://forum.audiob.us/profile/senhorlampada" target="_blank">Senhorlampada • </a> <a href="https://www.instagram.com/reel/Cx3IPUyxXy0/?igshid=MzRlODBiNWFlZA==" target="_blank">Sketch Audio • </a> <a href="https://forum.audiob.us/profile/Slush" target="_blank">Slush • </a>
-<a href="https://www.instagram.com/p/CaunI-FlhoL/?igshid=MzRlODBiNWFlZA==" target="_blank">Soulyftmusic • </a> <a href="https://youtu.be/UqlG7AMIjSs?si=i-DKQjRKTr8aqAe2" target="_blank">Sound For More • </a> <a href="https://www.youtube.com/live/J0TS00MB_Sk?si=x6P3BLmU1oMCuEzg" target="_blank">The Sound Test Room • </a> <a href="https://www.instagram.com/p/B-P-XeBlAVt/?igshid=MzRlODBiNWFlZA==" target="_blank">Vincent Pidone • </a>
-<a href="https://www.instagram.com/reel/C33Dg4WRqky/?igsh=YmM4bHNpZXp1aDU0" target="_blank">Wolf Bronsky</a>
-</p></div>
-	</div>
-</section>
+" target="_blank">Mylene Kroon • </a> <a href="https://www.facebook.com/nathan.cherney.7" target="_blank">Nathan Snow •
+                    </a> <a href="https://www.facebook.com/profile.php?id=100078307773177" target="_blank">Nicolas
+                        Lebrun • </a> <a href="https://www.instagram.com/reel/C0X9MLFOFlb/?igshid=MzRlODBiNWFlZA=="
+                        target="_blank">Nino Beatz • </a>
+                    <a href="https://www.instagram.com/reel/Cn6VWhvujFl/?igshid=MzRlODBiNWFlZA==" target="_blank">Omar
+                        Soriano Lopez • </a> <a
+                        href="https://www.instagram.com/reel/CnxpE67r58c/?igshid=MzRlODBiNWFlZA=="
+                        target="_blank">Pedeplei • </a> <a
+                        href="https://www.instagram.com/reel/Cjf8f6av9fk/?igshid=MzRlODBiNWFlZA=="
+                        target="_blank">Perplex On • </a> <a
+                        href="https://www.instagram.com/reel/Ct2jmdMtW7e/?igshid=MzRlODBiNWFlZA==" target="_blank">Peter
+                        Steinberg • </a>
+                    <a href="https://www.instagram.com/reel/C4Dx4_MOXI9/?igsh=bHIxcnR1MXNubW53"
+                        target="_blank">Professor Hipstirz • </a>
+                    <a href="https://www.instagram.com/reel/CtmCmIDJYQo/?igshid=MzRlODBiNWFlZA==" target="_blank">Rémi
+                        MZ • </a> <a href="https://www.youtube.com/watch?v=U22m4LqKoy4" target="_blank">Roikat • </a> <a
+                        href="https://www.instagram.com/reel/Cp-vJF3PKvj/?igshid=MzRlODBiNWFlZA=="
+                        target="_blank">Rooshie Music • </a> <a href="https://forum.audiob.us/profile/senhorlampada"
+                        target="_blank">Senhorlampada • </a> <a
+                        href="https://www.instagram.com/reel/Cx3IPUyxXy0/?igshid=MzRlODBiNWFlZA=="
+                        target="_blank">Sketch Audio • </a> <a href="https://forum.audiob.us/profile/Slush"
+                        target="_blank">Slush • </a>
+                    <a href="https://www.instagram.com/p/CaunI-FlhoL/?igshid=MzRlODBiNWFlZA=="
+                        target="_blank">Soulyftmusic • </a> <a href="https://youtu.be/UqlG7AMIjSs?si=i-DKQjRKTr8aqAe2"
+                        target="_blank">Sound For More • </a> <a
+                        href="https://www.youtube.com/live/J0TS00MB_Sk?si=x6P3BLmU1oMCuEzg" target="_blank">The Sound
+                        Test Room • </a> <a href="https://www.instagram.com/p/B-P-XeBlAVt/?igshid=MzRlODBiNWFlZA=="
+                        target="_blank">Vincent Pidone • </a>
+                    <a href="https://www.instagram.com/reel/C33Dg4WRqky/?igsh=YmM4bHNpZXp1aDU0" target="_blank">Wolf
+                        Bronsky</a>
+                </p>
+            </div>
+        </div>
+    </section>
 
 
     <!-- Footer -->
     <footer>
-			<div class="container text-center">
-        <p>Also follow us for nice jams and latest updates ...</p>
-				<a href="https://bsky.app/profile/octachron-app.bsky.social" target="_blank" title="On Bluesky"><img src="img/icon-bluesky-white.svg" class="social"></a>
-				<a href="https://www.facebook.com/profile.php?id=100081592126264" target="_blank" title="On Facebook"><img src="img/icon-facebook-6.svg" class="social"></a>
-				<a href="https://www.instagram.com/octachron_ios_drum_sequencer/profilecard/?igsh=MTg4b204bGdic2Vmaw==" target="_blank" title="On Instagram"><img src="img/icon-instagram-11.svg" class="social"></a>
-				<a href="https://www.youtube.com/channel/UCIos3VyvFeK8eXQvLxLs8tA" target="_blank" title="On Youtube"><img src="img/icon-youtube-6.svg" class="social"></a>
-				<a href="https://www.tiktok.com/@octachron_ios_drum_seq?_t=8p7LTvjAiYK&_r=1" target="_blank" title="On Tiktok"><img src="img/icon_tiktok.svg" class="social"></a>
-      </br><br>
+        <div class="container text-center">
+            <p>Also follow us for nice jams and latest updates ...</p>
+            <a href="https://bsky.app/profile/octachron-app.bsky.social" target="_blank" title="On Bluesky"><img
+                    src="img/icon-bluesky-white.svg" class="social"></a>
+            <a href="https://www.facebook.com/profile.php?id=100081592126264" target="_blank" title="On Facebook"><img
+                    src="img/icon-facebook-6.svg" class="social"></a>
+            <a href="https://www.instagram.com/octachron_ios_drum_sequencer/profilecard/?igsh=MTg4b204bGdic2Vmaw=="
+                target="_blank" title="On Instagram"><img src="img/icon-instagram-11.svg" class="social"></a>
+            <a href="https://www.youtube.com/channel/UCIos3VyvFeK8eXQvLxLs8tA" target="_blank" title="On Youtube"><img
+                    src="img/icon-youtube-6.svg" class="social"></a>
+            <a href="https://www.tiktok.com/@octachron_ios_drum_seq?_t=8p7LTvjAiYK&_r=1" target="_blank"
+                title="On Tiktok"><img src="img/icon_tiktok.svg" class="social"></a>
+            </br><br>
 
-			<p>Please enjoy OCTACHRON and leave us a nice review on the <a href="https://apps.apple.com/de/app/octachron-midi-drum-sequencer/id1453137215" target="_blank">
-							 App Store.</a> Thank you very much!<br><br>
-							 <small>
-								 <a class="page-scroll" href="index.html#page-top">Home • </a>
-								 <a class="page-scroll" href="#contact">Contact/Imprint • </a>
-								 <a href="dataprivacy.html">Data Privacy • </a>
-								 <a href="datenschutz.html">Datenschutz (German)</a>
-							 </small></p>
-							<small>&copy; 2025 Markus Teufel and Tassilo Eichler</small>
-			</div>
-		</footer>
+            <p>Please enjoy OCTACHRON and leave us a nice review on the <a
+                    href="https://apps.apple.com/de/app/octachron-midi-drum-sequencer/id1453137215" target="_blank">
+                    App Store.</a> Thank you very much!<br><br>
+                <small>
+                    <a class="page-scroll" href="index.html#page-top">Home • </a>
+                    <a class="page-scroll" href="#contact">Contact/Imprint • </a>
+                    <a href="dataprivacy.html">Data Privacy • </a>
+                    <a href="datenschutz.html">Datenschutz (German)</a>
+                </small>
+            </p>
+            <small>&copy; 2025 Markus Teufel and Tassilo Eichler</small>
+        </div>
+    </footer>
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
@@ -589,4 +723,5 @@ Kai Aras • </a> <a href="https://www.instagram.com/reel/CtCEA5LsA7M/?igshid=Mz
     <script src="js/grayscale.js"></script>
 
 </body>
+
 </html>

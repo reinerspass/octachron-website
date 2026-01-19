@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="OCTACHRON is a very Flexible iOS 16 Track MIDI Drum Sequencer with rich modulation and sequencing capabilities. It works standalone or as AUv3 AudioUnit in your favorite iOS DAW.">
+  <meta name="keywords" content="MIDI, Drum, Sequencer, iOS, iPad, iPhone AUv3, MIDI CC, Standalone, DAW">
+  <meta name="author" content="Markus Teufel, Tassilo Eichler">
+  <meta property="og:image" content="https://octachron.de/img/octachron_logo_icon_black@2x.png" />
+  <meta name="twitter:image" content="https://octachron.de/img/octachron_logo_icon_black@2x.png">
+  <meta name="twitter:card" content="https://octachron.de/img/octachron_logo_icon_black@2x.png">
+
+	<title>OCTACHRON iOS MIDI Drum Sequencer (AUv3) - Manual</title>
+  <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+	<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+	<link rel="stylesheet" href="http://blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
+
+	<link rel="stylesheet" href="css/bootstrap-image-gallery.min.css">
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
+    <script src="js/bootstrap-image-gallery.min.js"></script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+	<!-- Custom CSS -->
+	<link href="css/grayscale_02.css" rel="stylesheet">
+
+</head>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+	<!-- Navigation -->
+	<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse"><i class="fa fa-bars"></i></button>
+			<a class="navbar-brand page-scroll" href="index.html#page-top">
+				<img id="octachron-logo" src="img/octachron_logo_icon_transp.svg" alt="Logo OCTACHRON MIDI Drum Sequencer (AUv3) for iOS">
+			</a>
+			<a class="btn_appstore_mobile" href="https://apps.apple.com/de/app/octachron-midi-drum-sequencer/id1453137215" target="_blank">
+				<img src="img/appstorebadge.png" width="140px" alt="Appstorebadge">
+			</a>
+		</div>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+						<ul class="nav navbar-nav">
+												<!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+												<li class="hidden"><a href="#page-top"></a></li>
+							<li><a class="page-scroll" href="index.html#about">Features</a></li>
+							<li><a class="page-scroll" href="index.html#gallery">Gallery</a></li>
+							<li><a class="page-scroll" href="index.html#specs">Specs</a></li>
+							<!-- <li><a class="page-scroll" href="#download">Download</a></li> -->
+							<li><a class="page-scroll" href="index.html#merch" style="color: #FFAB31">Merch</a></li>
+							<li><a class="page-scroll" href="index.html#contact">Contact</a></li>
+							<li><a class="page-scroll" href="manual.html">Manual</a></li>
+							<li><a class="btn_appstore_desktop" href="https://apps.apple.com/de/app/octachron-midi-drum-sequencer/id1453137215" target="_blank">
+				 					 <img src="img/appstorebadge.png" width="100px" alt="Appstorebadge"></a></li>
+					</ul>
+		</div>
+					<!-- /.navbar-collapse -->
+	</div>
+			<!-- /.container -->
+</nav>
+
+<main>
+	<div class="smooth">
+
+    <!-- Headline -->
+    <section id="about" class="container content-section text-left">
+		<h1>OCTACHRON Manual</h1>
+
+		<h2 class="manual">Table of Contents</h2>
+		<ul>
+			<li><a class="page-scroll" href="#connecting">Connecting OCTACHRON</a></li>
+			<li><a class="page-scroll" href="#preset">Presets Menu and MIDI Mapping</a></li>
+			<li><a class="page-scroll" href="#standalone">Standalone Controls</a></li>
+			<li><a class="page-scroll" href="#grid">Step Editing Grid</a></li>
+			<li><a class="page-scroll" href="#randomizer">Smart Randomizer and Mutation</a></li>
+			<li><a class="page-scroll" href="#row">Track Settings</a></li>
+			<li><a class="page-scroll" href="#modulation">Modulation</a></li>
+			<li><a class="page-scroll" href="#modulation_mutation">Mutation of CC Parameters</a></li>
+			<li><a class="page-scroll" href="#song">Song Mode</a></li>
+			<li><a class="page-scroll" href="#settings">Sequencer Settings</a></li>
+			<li><a class="page-scroll" href="#midimapping">External Control via MIDI</a></li>
+		</ul><br><br>
+
+		<h2 id="connecting" class="manual">Connecting OCTACHRON</h2>
+
+		<div class="row">
+			<div class="col-lg-10">
+				<h3>Use OCTACHRON standalone via MIDI</h3>
+
+        <img src="img/manual/ipad-midi-drum-sequencer-auv3-01.jpg" alt="OCTACHRON MIDI Drum Sequencer (AUv3) for iOS - MIDI Setup" class="manual">
+				<p class="manual">
+To use OCTACHRON in standalone mode please first start the instrument app you want control with it (Ruismaker in this example). Or if it is a piece of hardware, connect it to your iPad or iPhone via a MIDI/USB cable. In OCTACHRON then press the button “MIDI” in the top right and select your instrument under “MIDI OUT”. 	Then continue with the chapter <a href="#mapping">MIDI Mapping</a> below.
+				</p>
+			</div>
+
+			<div class="col-lg-10">
+				<h3>Use OCTACHRON in AUM</h3>
+
+				<img src="img/manual/ipad-midi-drum-sequencer-auv3-02.jpg" alt="OCTACHRON MIDI Drum Sequencer (AUv3) for iOS - MIDI Setup" class="manual">
+				<p class="manual">
+					In AUM just create a MIDI track, go to „Audio Unit MIDI Processor“ and select OCTACHRON from there.<br>Then press the curved arrow icon in the top right.
+				</p>
+				<img src="img/manual/ipad-midi-drum-sequencer-auv3-03.jpg" alt="OCTACHRON MIDI Drum Sequencer (AUv3) for iOS - MIDI Setup" class="manual">
+				<p class="manual">
+					Connect the audio instrument you want to control via the MIDI routing dialogue. Then continue with the chapter <a href="#mapping">MIDI Mapping</a> below.
+				</p>
+			</div>
+
+			<div class="col-lg-10">
+				<h3>Use OCTACHRON inside Cubasis, Logic Pro or other iOS DAWs</h3>
+
+        <img src="img/manual/ipad-midi-drum-sequencer-auv3-04.jpg" alt="OCTACHRON MIDI Drum Sequencer (AUv3) for iOS - MIDI Setup" class="manual">
+				<p class="manual">
+Inside a DAW please first select the track with the instrument you want to control with OCTACHRON. Open “MIDI Effects” there, tap on “Tap to Add Effect” and select OCTACHRON. Then continue with the chapter <a href="#mapping">MIDI Mapping</a> below.
+</p><br>
+			</div>
+
+			<div class="col-lg-10">
+				<h2 id="preset" class="manual">Presets Menu</h2>
+
+				<h3>User Presets</h3>
+				<p class="manual">
+					Load and save pattern presets and songs you created. Also export presets and MIDI files for use across devices.
+				</p>
+
+				<img src="img/manual/ios-midi-drum-sequencer-auv3-05a.jpg" alt="OCTACHRON MIDI Drum Sequencer (AUv3) for iOS - MIDI Setup" class="manual">
+
+				<h3 id="mapping">MIDI Mapping</h3>
+				<p class="manual">
+					Map your tracks to the MIDI notes your instrument uses.</p>
+
+					<img src="img/manual/ios-midi-drum-sequencer-auv3-05b.jpg" alt="OCTACHRON MIDI Drum Sequencer (AUv3) for iOS - MIDI Setup" class="manual">
+
+					<h3>Apps</h3>
+					<p class="manual">
+					Load one of the many mapping presets we created for several iOS drum machines.
+					</p>
+
+					<h3>Hardware</h3>
+					<p class="manual">
+					Load one of the many mapping presets we created for several hardware drum machines.
+					</p>
+
+					<h3>Custom</h3>
+					<p class="manual">
+					Load any mapping preset, that you saved yourself with the SAVE functionality below. You can also share every preset from here.
+					</p>
+
+					<h3>Customize</h3>
+					<p class="manual">
+						Create your own MIDI mapping.<br>This duplicates the functionality from the track and modulation settings and gives you an overview of the whole mapping.
+					</p>
+
+					<h3>Generate Scale</h3>
+					<p class="manual">
+						Generate note scales for melodic instruments.
+					</p>
+
+					<h3>Save Mapping</h3>
+					<p class="manual">
+						Save the current MIDI mapping settings as a new mapping preset. It will then appear under CUSTOM. You can find a nice overview of the current MIDI mapping in the CUSTOMIZE menu.
+					</p>
+
+					<br><br>
+
+					<h3 id="mapping">Global Track</h3>
+					<p class="manual">
+						A few MIDI mapping presets also contain an additional track labled "Global", e.g. the Korg Gadget Gladstone preset. You can use these tracks to control global CC values of that device. For that purpose you can either fill the hole track with steps or activate the option CC ON EVERY STEP in the <a class="page-scroll" href="#settings">Sequencer Settings.</a>
+					</p>
+						<img src="img/manual/iOS-midi-drum-sequencer-auv3-05c.jpg" alt="OCTACHRON MIDI Drum Sequencer (AUv3) for iOS - MIDI Setup" class="manual">
+
+						<br><br>
+
+				<h3 id="mapping">NUMBER OF TRACKS AND HIDING THEM</h3>
+				<p class="manual">
+					By default every MIDI Mapping preset comes with the number of tracks this drum machine typically uses. By pressing SHIFT and the eye icons though, you can hide tracks you do not need. And if that is still not enough, you can also customize the absolute number of tracks and their appearance via the <a class="page-scroll" href="#settings">Sequencer Settings.</a></p>
+
+					<img src="img/manual/2301_1_8_hiding.jpg" alt="OCTACHRON MIDI Drum Sequencer (AUv3) for iOS - MIDI Setup" class="manual">
+
+					<br><br>
+
+			</div>
+
+			<div class="col-lg-10">
+				<h2 id="standalone" class="manual">Standalone controls</h2><br>
+				<img src="img/manual/ipad-midi-drum-sequencer-auv3-06.jpg" alt="OCTACHRON MIDI Drum Sequencer (AUv3) for iOS - MIDI Setup" class="manual">
+
+				<h3>Play/Stop</h3>
+				<p class="manual">
+Plays and stops the sequencer. Patterns are always played from the beginning.
+				</p>
+
+				<h3>BPM</h3>
+				<p class="manual">
+					Just swipe the BPM control left and right to adjust full BPM steps. Tap on the arrows to adjust the decimals. Or just tap on the number to put in the BPM numerically.
+				</p>
+
+				<h3>Link</h3>
+				<p class="manual">
+					Synchronizes OCTACHRON to other instruments in your network via Ableton Link.
+				</p><br><br>
+			</div>
+
+			<div class="col-lg-10">
+				<h2 id="grid" class="manual">Step Editing Grid</h2>
+				<p class="manual">
+The step editing grid features 1 to 16 tracks. Each track controls a drum voice or an instrument note. And it can be addressed separately by MIDI note and channel.</p>
+			</div>
+
+			<div class="col-lg-10">
+				<h3>Grid View</h3>
+
+				<img src="img/manual/ipad-midi-drum-sequencer-auv3-07.jpg" alt="OCTACHRON MIDI Drum Sequencer (AUv3) for iOS - MIDI Setup" class="manual">
+				<p class="manual">
+Just tap on the steps to set and delete them. You can also set several steps on a track by swiping over them. By setting a step on a track, you also select this track for <a href="#modulation">modulation.</a> You can also select a track by tapping on the left column of it. And you can also mute each track with the mute button.</p><br>
+			</div>
+			<div class="col-lg-10">
+				<h2 id="randomizer" class="manual">Smart Randomizer and Mutation</h2>
+				<img src="img/manual/ipad-midi-drum-sequencer-auv3-14b.jpg" alt="OCTACHRON MIDI Drum Sequencer (AUv3) for iOS - MIDI Setup" class="manual">
+				<p class="manual">
+					Tap and hold on an empty or already filled pattern alias and tap on “Smart Randomize”. Via a smart algorithm OCTACHRON will create a random new pattern, which is based on a standard house groove. Just tap “Smart Randomize” again to get a new pattern.
+				</p>
+				<h3>Randomizer Settings</h3>
+				<img src="img/manual/ipad-midi-drum-sequencer-auv3-08.jpg" alt="OCTACHRON MIDI Drum Sequencer (AUv3) for iOS - MIDI Setup" class="manual">
+				<p class="manual">
+					Via long press or shift + tap on the left column of a track you can adjust the randomizer settings for each drum voice or instrument note. You can go back to the pattern overlay again then and press "Smart Randomize" for a whole new pattern.
+					Or you randomize each track by hitting "Apply" here.
+				</p>
+
+				<h3>Density</h3>
+				<p class="manual">
+					Adjusts the amount of randomly set steps per track.
+				</p>
+				<h3>Randomness</h3>
+				<p class="manual">
+					Defines how much randomness is introduced to each track. It is ranging from more 4-to-the-floor rhythmical to complete random, always respecting the density parameter.<br>
+				</p>
+				<h3>Mutation</h3>
+				<p class="manual">
+					Randomly plays additional steps in your track and randomly leaves some steps out.<br><br>
+					(This duplicates the probability setting in an even easier and intuitive way. Though if you want absolute control, you can still use the probability setting.)
+				</p><br>
+			</div>
+
+			<div class="col-lg-10">
+				<h2 id="row" class="manual">Track Settings</h2>
+				<p class="manual">
+					Via long press or shift + tap on the left column of a track and scrolling down a little, you also find more settings.<br>
+				</p>
+			</div>
+
+			<div class="col-lg-10">
+				<img src="img/manual/ipad-midi-drum-sequencer-auv3-09.jpg" alt="OCTACHRON MIDI Drum Sequencer (AUv3) for iOS - MIDI Setup" class="manual">
+
+				<h3>Move X</h3>
+				<p class="manual">
+					Moves steps of this track on the X axis.
+				</p>
+			</div>
+
+			<div class="col-lg-10">
+				<h3>Clear Track</h3>
+				<p class="manual">
+Deletes all steps set on this track.				</p>
+			</div>
+
+			<div class="col-lg-10">
+				<h3>Settings</h3>
+				<p class="manual">
+					Sets the name of this track, its clock divider, MIDI note and channel and sends a test note to check if it works right.
+				</p><br>
+			</div>
+
+			<div class="col-lg-10">
+				<h2 id="modulation" class="manual">Modulation</h2>
+				<p class="manual">
+Modulation is another key feature of OCTACHRON. Just tap on a track to select it for modulation. On the bottom of the screen you will then find its modulation view.<br>
+To use the interface more efficient, you can show and hide the modulation panel via the “MOD” button in the top right and also customize its size with its handle on the bottom left.<br>
+Tap on the dropdown on the buttom left to open up the modulation selector. Just tap anywhere on an entry to select it.<br>
+On the right then set the amount of each modulation parameter for each step.
+				</p>
+				</div>
+
+
+			<div class="col-lg-10">
+							<h3>Basic Step Modulation</h3>
+				<img src="img/manual/ipad-midi-drum-sequencer-auv3-11.jpg" alt="OCTACHRON MIDI Drum Sequencer (AUv3) for iOS - MIDI Setup" class="manual">
+
+				<p class="manual">
+					Set velocity, step repeats, offset, probability, trigger condition, track length and gate length for each step. <br><br> “Trigger Condition” only triggers the step of a repeating pattern, that is set here. So for example “1./2” only plays the first set step within two repeats. “2./3” only plays the second one within three repeats and so on. This is useful for example, if you want to create little variations of a pattern without having to create a complete new one. <br> Track length allows you to change the length of each track independently from the others and create polyrhythms.<br><br>
+					By pressing SHIFT while dragging one of the controllers, you can adjust the value for all steps together.
+				</p>
+			</div>
+
+			<div class="col-lg-10">
+				<h3>CC Modulation</h3>
+				<img src="img/manual/ipad-midi-drum-sequencer-auv3-12.jpg" alt="OCTACHRON MIDI Drum Sequencer (AUv3) for iOS - MIDI Setup" class="manual">
+
+				<p class="manual">
+					CC Modulation shows the parameters that your specific instrument allows you to modulate. To select a CC parameter for modulation, just tap on it. Also make sure to activate it to apply the modulation. If you make changes to a parameter, it is activated automatically.<br>
+					Again by pressing SHIFT while dragging one of the controllers, you adjust the value for all steps together.</p>
+			</div><br>
+
+			<div class="col-lg-10">
+				<h2 id="modulation_mutation" class="manual">Mutation of Modulation Parameters</h2>
+				<p class="manual">
+And to go even one step further, OCTACHRON also allows you to let velocity, step repeats, offset and all CC Modulation parameters mutate:
+				</p>
+			</div>
+
+
+			<div class="col-lg-10">
+							<h3>Mutation of Velocity, Step Repeats and Offset</h3>
+				<img src="img/manual/ipad-midi-drum-sequencer-auv3-17.jpg" alt="OCTACHRON
+ MIDI Drum Sequencer (AUv3) for iOS - MIDI Setup" class="manual">
+
+			</div>
+
+			<div class="col-lg-10">
+				<h3>Mutation of CC Parameters</h3>
+				<img src="img/manual/ipad-midi-drum-sequencer-auv3-18.jpg" alt="OCTACHRON
+ MIDI Drum Sequencer (AUv3) for iOS - MIDI Setup" class="manual">
+
+				<p class="manual">
+				Just tap on edit on each modualtion parameter or long press on the selected dropdown value in the bottom left to call up the edit dialogue.
+			 Here you can easily set the mutation chance and range for each parameter.<br>
+			 Also use the edit dialogue to reset your basic step modulations, to change CC addresses and names and to activate or deactivate your CC Modulations with the toggle in the top right.
+			 </p>
+			</div><br>
+
+			<div class="col-lg-10">
+				<h2 id="song" class="manual">Song Mode</h2>
+				<img src="img/manual/ipad-midi-drum-sequencer-auv3-14.jpg" alt="OCTACHRON
+ MIDI Drum Sequencer (AUv3) for iOS - MIDI Setup" class="manual">
+				<p class="manual">
+					Above the step editing grid you find the song mode. You can chain up to 8 patterns there, multiply them and change their order. Activate the song mode with the “SONG” button on the top right. The patterns are now played according to their current order and set number of repeats. By tapping on a pattern alias you select it for editing and make it play next. Via long press on an alias or shift + tap you get the pattern tools dialogue.
+Via drag and drop you can change the order of the patterns, also while the song is already playing.
+				</p>
+				<h3>Pattern Tools</h3>
+
+					<ul>
+						<li>Set number of pattern repeats in song mode</li>
+						<li>Set clock divider per pattern</li>
+						<li>Copy pattern</li>
+						<li>Paste pattern</li>
+						<li>Clear pattern</li>
+						<li>Create a random pattern (Also see chapter <a href="#randomizer">Smart Randomizer and Mutation</a>)</li>
+						<li>Move steps of a pattern on the X and Y axis</li>
+
+					</ul><br><br><br>
+
+			</div>
+
+			<div class="col-lg-10">
+				<h2 id="settings" class="manual">Sequencer Settings</h2>
+
+				<img src="img/manual/ipad-midi-drum-sequencer-auv3-15.jpg" alt="OCTACHRON
+ MIDI Drum Sequencer (AUv3) for iOS - Sequencer Settings" class="manual">
+
+				<p class="manual">
+					Tap on the grid icon to call up the sequencer settings.
+				</p>
+
+				<h3>Number of Steps (1-32)</h3>
+				<p class="manual">
+					Globally sets the number of steps of your patterns. The default number is 16.
+				</p>
+
+				<h3>NUMBER OF TRACKS (1-16)</h3>
+				<p class="manual">
+					Sets a custom number of tracks. Default is 8 or the default number of your loaded MIDI mapping preset.
+				</p>
+
+				<h3>COMPACT MODE</h3>
+				<p class="manual">
+					Makes your grid appear more compact and less likely to scroll. It is activated by default. But if you need bigger grid tiles, just deactivate it.
+				</p>
+
+				<h3>Instant Pattern Switch</h3>
+				<p class="manual">
+Makes the pattern change instantly, when you cue it manually - as opposed to the default setting, where the sequencer waits until the last pattern has finished playing.</p>
+
+				<h3>CC on every step</h3>
+				<p class="manual">
+					If activated, instead of sending CC messages only when sending actual MIDI notes, OCTACHRON
+ will then also send CC messages without any active steps. This comes in handy, if you want to control an instrument parameter without sending a note.
+				</p>
+
+				<!-- <h3>0 pattern marks loop end in song</h3>
+				<p class="manual">
+					With this option you can define loops of several patterns by setting the pattern afterwards to 0 repeats. This can be useful in live situations, if you want to create a set of independent loops of several patterns within a song to queue them individually. For example a verse, a chorus, a bridge or break loop.
+				</p> --> <br>
+
+				<img src="img/manual/ipad-midi-drum-sequencer-auv3-16.jpg" alt="OCTACHRON
+ MIDI Drum Sequencer (AUv3) for iOS - MIDI Setup" class="manual">
+
+				<h3>Swing (50-100%)</h3>
+				<p class="manual">
+					Globally sets the amount of swing for all tracks and patterns.
+				</p>
+
+				<!-- <h3>Swing Grid</h3>
+				<p class="manual">
+					Defines which notes are affected by the swing setting. The default value is 1: every other note is affected. That means 1 straight - 1 delayed. Changing the setting will play 2 straight - 2 delayed, 4 straight - 4 delayed and so on ...
+				</p> -->
+
+				<h3>MIDI</h3>
+				<p class="manual">
+					Sets one global MIDI channel, which overrides all individual channel settings.
+				</p><br><br>
+
+			</div>
+
+			<div class="col-lg-10">
+				<h2 id="midimapping" class="manual">External Control via MIDI notes<br>
+				standalone and as AUv3</h2>
+
+				<img src="img/manual/ios-midi-drum-sequencer-auv3-99.jpg" alt="OCTACHRON
+ MIDI Drum Sequencer (AUv3) for iOS - MIDI Setup" class="manual">
+
+				<p class="manual">
+					OCTACHRON
+ can also be controlled via external MIDI messages (notes). You can activate (start/stop) the whole sequencer or single patterns. And you can mute/unmute single tracks.<br><br>
+				</p>
+
+				<img src="img/manual/ios-midi-drum-sequencer-auv3-20.jpg" alt="OCTACHRON
+ MIDI Drum Sequencer (AUv3) for iOS - MIDI Setup" class="manual">
+
+				<p class="manual">
+					This page shows the MIDI notes you have to send to trigger each function.
+				</p>
+
+				<h3>Active</h3>
+				<p class="manual">
+Starts/stops OCTACHRON
+ altogether. So if Active is off, OCTACHRON
+ will not send any MIDI messages.</p>
+
+ 				<h3>Activate Pattern</h3>
+				<p class="manual">
+Controls starting/stopping patterns using MIDI notes.</p>
+
+				<h3>Mute</h3>
+				<p class="manual">
+					Controls muting/unmuting individual tracks.
+				</p>
+
+				
+
+			</div>
+
+
+		</div>
+	</section>
+</div>
+</main>
+
+<!-- Footer -->
+<footer>
+	<div class="container text-center">
+		<p>Also follow us for nice jams and latest updates ...</p>
+		<a href="https://bsky.app/profile/octachron-app.bsky.social" target="_blank" title="On Bluesky"><img src="img/icon-bluesky-white.svg" class="social"></a>
+		<a href="https://www.facebook.com/profile.php?id=100081592126264" target="_blank" title="On Facebook"><img src="img/icon-facebook-6.svg" class="social"></a>
+		<a href="https://www.instagram.com/octachron_ios_drum_sequencer/profilecard/?igsh=MTg4b204bGdic2Vmaw==" target="_blank" title="On Instagram"><img src="img/icon-instagram-11.svg" class="social"></a>
+		<a href="https://www.youtube.com/channel/UCIos3VyvFeK8eXQvLxLs8tA" target="_blank" title="On Youtube"><img src="img/icon-youtube-6.svg" class="social"></a>
+		<a href="https://www.tiktok.com/@octachron_ios_drum_seq?_t=8p7LTvjAiYK&_r=1" target="_blank" title="On Tiktok"><img src="img/icon_tiktok.svg" class="social"></a>
+	</br><br>
+
+	<p>Please enjoy OCTACHRON and leave us a nice review on the <a href="https://apps.apple.com/de/app/octachron-midi-drum-sequencer/id1453137215" target="_blank">
+					 App Store.</a> Thank you very much!<br><br>
+					 <small>
+						 <a class="page-scroll" href="index.html#page-top">Home • </a>
+						 <a class="page-scroll" href="index.html#contact">Contact/Imprint • </a>
+						 <a href="dataprivacy.html">Data Privacy • </a>
+						 <a href="datenschutz.html">Datenschutz (German)</a>
+					 </small></p>
+					<small>&copy; 2025 Markus Teufel and Tassilo Eichler</small>
+	</div>
+</footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/grayscale.js"></script>
+
+</body>
+</html>
